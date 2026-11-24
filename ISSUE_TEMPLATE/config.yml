@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General Inquiries (Prayer Times, Events, Services)
+    url: mailto:info@masjidmusab.com
+    about: For non-technical questions about Masjid Musab bin Umair, please email info@masjidmusab.com instead of opening a GitHub issue.
+  - name: Technical Onboarding Questions
+    url: mailto:tech@masjidmusab.com
+    about: Want to volunteer or ask a general setup question? Email our technology team at tech@masjidmusab.com.
+  - name: Report a Security Vulnerability
+    url: https://github.com/masjidmusab/.github/blob/main/SECURITY.md
+    about: Do not report security issues publicly. Follow our Security Policy to email security@masjidmusab.com privately.
