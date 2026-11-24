@@ -1,0 +1,47 @@
+name: Bug Report
+description: Report a broken link, layout glitch, or technical bug on the Masjid website
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        *Assalamu Alaikum Warahmatullahi Wabarakatuh!* Thank you for helping improve **Masjid Musab bin Umair's** website.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected Area
+      options:
+        - Prayer Times / Jummah Schedule
+        - Donations / MOHID Portal Links
+        - Events / Calendar
+        - Navigation / Mobile Layout
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened & how to reproduce it?
+      description: Describe the bug, what you expected to happen, and drag & drop any screenshots here.
+      placeholder: E.g., On mobile, the Maghrib iqamah time overflows outside the card on the homepage.
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Device & Browser (Optional)
+      placeholder: E.g., iPhone Safari, Windows Chrome
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Security Check
+      options:
+        - label: This is NOT a security vulnerability (report security issues privately to security@masjidmusab.com).
+          required: true
