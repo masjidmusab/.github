@@ -1,0 +1,53 @@
+name: Feature Request
+description: Suggest a new feature, UI improvement, or enhancement for the Masjid platform
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        *Assalamu Alaikum Warahmatullahi Wabarakatuh!* We welcome ideas that better serve our congregation and community as *Sadaqah Jariyah*. New features are built in our next-gen React & Next.js repository (**`musab-connect`**).
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Community Need / Problem Statement
+      description: What problem does this solve for congregants, visitors, or Masjid admins?
+      placeholder: E.g., Visitors looking for Jummah khutbah times on Fridays have to scroll too far on mobile.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the feature or improvement you would like to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: design
+    attributes:
+      label: Mockups, Wireframes, or Examples (Optional)
+      description: Share any links, sketches, or examples from other Islamic centers or non-profits.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: willingness
+    attributes:
+      label: Would you like to help implement this?
+      options:
+        - Yes, I would like to be assigned once approved
+        - Maybe, if a tech lead can provide guidance
+        - No, just submitting the idea for the backlog
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Community Guidelines
+      options:
+        - label: I have reviewed the Code of Conduct and confirmed this request aligns with Masjid Musab bin Umair's mission.
+          required: true
